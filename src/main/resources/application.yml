@@ -6,3 +6,11 @@ spring:
       uri: bolt://47.99.210.191:7687
       username: neo4j
       password: 5tgbNHY^
+  datasource:
+    driver-class-name: org.neo4j.jdbc.http.HttpDriver
+    name: neo4j
+    password: 5tgbNHY^
+    url: jdbc:neo4j:http://47.99.210.191:7474
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
